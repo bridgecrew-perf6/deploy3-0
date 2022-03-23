@@ -1,0 +1,20 @@
+<!-- templates/home.html -->
+
+{% load socialaccount %}
+{% providers_media_js %}
+<html>
+
+<head>
+    <title>Facebook Registration</title>
+</head>
+
+<body>
+    <h1>My Facebook Login Project</h1>
+    <a href="{% provider_login_url }">Login Button image</a>
+    <a href="{% provider_login_url }">Sign in with Facebook</a>
+    <a href="{% provider_login_url 'facebook' %}">Login with Facebook</a>
+    
+
+</body>
+
+</html>
